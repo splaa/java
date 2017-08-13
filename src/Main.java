@@ -4,10 +4,15 @@ public class Main {
         System.out.println("Hello World!");
         Reader reader = new Reader();
         reader.Scan();
-        /*i = count(i);
-        k = count(k);
-        System.out.println("Variable i = " + i +"\n");
-        System.out.println("Variable k = " + k +"\n");*/
+        reader.i = count(reader.i);
+        reader.k = count(reader.k);
+        System.out.println(reader.i);
+        System.out.println(reader.k);
+        reader.i = 11;
+        reader.k = 22;
+        System.out.println("Первое число: " + reader.i);
+        System.out.println("Второе число: " + reader.k);
+
     }
 
     private static int count(int x) {
